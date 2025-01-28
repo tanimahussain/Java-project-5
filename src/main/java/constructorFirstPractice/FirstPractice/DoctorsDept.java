@@ -1,5 +1,7 @@
 package constructorFirstPractice.FirstPractice;
 
+
+
 public class DoctorsDept {
 	private String deptname;
 	private int roomnumber;
@@ -14,5 +16,9 @@ public class DoctorsDept {
 	}
 	public int getroomnumber() {
 		return this.roomnumber;
+	}
+	public void printdoctorsdeptdetails() {
+		System.out.println(getdeptname());
+		System.out.println(getroomnumber());
 	}
 }

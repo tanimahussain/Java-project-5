@@ -7,9 +7,10 @@ public class App {
     public static void main(String[] args) {
     	
     	
-    	DoctorsDept[] Dept= {new DoctorsDept("Cardiology",101),new DoctorsDept("neurology",102)};
-       Doctors doctor1= new Doctors("Lina","NY",Dept);
-       Doctors doctor2=new Doctors("Tania","Maine",Dept);
+    	DoctorsDept Dept1= new DoctorsDept("Cardiology",101);
+    	DoctorsDept Dept2= new DoctorsDept("neurology",102);
+       Doctors doctor1= new Doctors("Lina","NY",Dept1);
+       Doctors doctor2=new Doctors("Tania","Maine",Dept2);
        
       /* doctor1.setaddress("Texas");
        System.out.println(doctor1.getaddress());
@@ -17,8 +18,9 @@ public class App {
        
        System.out.println("Doctor1: "+doctor1.getdept()[0].getdeptname()+" ,roomnumber: "+ doctor1.getdept()[0].getroomnumber());*/
        
-      for(int i=0;i<doctor1.getdept().length;i++) {
-    	  System.out.println(doctor1.getdept()[i]);
-       }
+      doctor1.printdoctorsdetails();
+      doctor2.printdoctorsdetails();
+      
+     
     }
 }
